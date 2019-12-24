@@ -1,0 +1,90 @@
+<html>
+    <title>
+        Floating Label
+    </title>
+    <style>
+        .c1
+        {
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            box-sizing: border-box;
+            background-color:beige;
+            padding: 80px;
+            /* width: 700px;
+            height: 700px; */
+        }
+        h2
+        {
+            margin-bottom: 50px;
+            text-transform: uppercase;
+            color: black;
+        }
+        .i
+        {
+            padding:10px 0;
+            margin-top:10px;
+            width: 100%;
+            box-sizing: border-box;
+            border: none;
+           transition: .5s;
+
+        }
+        .i input[type="submit"] 
+        {
+            cursor: pointer;
+        }  
+
+        .d
+        {
+            position: relative;
+        }
+        .l
+        {
+            position: absolute;
+            right: 0px;
+            width: 100%;
+            top: 15PX;
+            color: #999;
+            
+        }
+        .d input:focus ~ label,
+        .d textarea:focus ~ label
+        .d input:valid ~ label,
+        .d textarea:valid ~ label
+        {
+                    top: -12px;
+                    left:0;
+        }
+        
+</style>
+
+
+    <div class="c1">
+        <h2>Student Registration details</h2>
+  <form>
+    <div class="d">
+        <input class="i" type="text" name="" aria-required="name is compulsosry">
+        <label class="l" for="">Name</label>
+    </div>
+    <div class="d">
+        <input class="i" type="text" name="" required>
+        <label class="l" for="">Email</label>
+    </div>
+    <div class="d">
+        <input class="i" type="text" name="" required>
+        <label class="l" for="">Mobile No</label>
+    </div>
+    <div class="d">
+        <textarea class="i" name="" id="" cols="30" rows="10"></textarea>
+        <label class="l" for="">Write Something About Your New school</label>
+    </div>
+    <div class="d">
+        <input class="i" type="submit" value="  submit  ">
+    </div>
+</form>
+</div>
+    <body>
+    </body>
+</html>
